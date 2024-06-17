@@ -1,0 +1,131 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+@font-face {
+    font-family: 'Tiemposheadline';
+    src: url('{{ get_asset_url('/Fellowfield 2023 Growth Child/Fonts/tiempos-headline-light-italic.woff2') }}') format('woff2'),
+         url('{{ get_asset_url('/Fellowfield 2023 Growth Child/Fonts/tiempos-headline-light-italic.woff') }}') format('woff'),
+         url('{{ get_asset_url('/Fellowfield 2023 Growth Child/Fonts/tiempos-headline-light-italic.ttf') }}') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    crossorigin: anonymous;
+}
+
+/* Gebruik het font in je class */
+span.lettertype2 {
+  font-family: 'Tiemposheadline', sans-serif;
+}
+.hero-text {
+  color: white;
+}
+
+.testClasse {
+  background-color: white !important; 
+}
+
+/* .row-number-3 {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+} */
+
+/* Achtergrond svg voor sectie 2 */
+.row-fluid-wrapper.row-depth-1.row-number-6.dnd-section.main-row-2-background-color {
+  background: url(https://info.fellowfield.nl/hubfs/Fellowfield_background.svg);
+  background-repeat: no-repeat;
+  background-size: 230px 100%;
+}
+.row-number-4 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+}
+
+/* Witte text voor de CTA sectie */
+.testimonial {
+  color: white !important;
+}
+
+/* CSS voor de 3 USP secties */
+.card--light summary, .card--light p, .card--light h1, .card--light h2, .card--light h3, .card--light h4, .card--light h5, .card--light h6, .card--light a:not(.button), .card--light span, .card--light div, .card--light li, .card--light blockquote {
+  color: white !important; 
+}
+.row-number-30 {
+  z-index: 10;
+  position: relative;
+}
+.cell_17150939536625-row-0-vertical-alignment {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 55px 65px 30px 65px;
+}
+/* CSS voor de icoontjes in de USP's */
+.offer-card__image-wrapper img {
+  height: 50px !important;
+}
+
+/* .row-number-33 {
+     max-width: 1200px;
+    width: 100%; 
+} */
+
+/* iframe CSS */
+iframe {
+    width: 100vw;           /* 100% van de viewport breedte */
+    max-width: 1200px;
+    min-height: 1450px;     /* Verzeker dat de hoogte niet onder 1000px valt */
+    border: none;
+/*     overflow-x: hidden; */
+}
+/* Achtergrond zodat de iframe niet de volledige breedte hoeft */
+#hs_cos_wrapper_widget_1715845099474 {
+    background-color: #F5F5EF;
+}
+
+/* Formulier CSS omdat via de editor de kleuren & border niet werd aangepast */
+form {
+  border-radius: 30px; 
+  background-color: #F5F5EF;
+}
+
+/* Basis Flexbox styling */
+.row-number-8 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Form button */
+.row-depth-1 .span7 .span12 form .hs-button,
+.row-depth-1 .span8 .span12 form .hs-button,
+.row-depth-1 .span9 .span12 form .hs-button,
+.row-depth-1 .span10 .span12 form .hs-button,
+.row-depth-1 .span11 .span12 form .hs-button,
+.row-depth-1 .span12 .span12 form .hs-button {
+  width: auto;
+}
+
+
+/* Responsive aanpassingen */
+@media (max-width: 768px) {
+    .row-number-8 > .row-fluid {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+  .cell_17150939536625-row-0-vertical-alignment {
+    padding: 30px;
+  }
+  
+  .row-fluid-wrapper.row-depth-1.row-number-6.dnd-section.main-row-2-background-color {
+    background-image: none;
+  }
+  
+  iframe {
+    min-height: 1860px;     /* Verzeker dat de hoogte niet onder 1000px valt */
+  }
+}

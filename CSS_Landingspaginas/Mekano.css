@@ -1,0 +1,166 @@
+
+/* Veld uitschakelen     */
+.hs_opdrachtcode {
+  pointer-events: none;
+  opacity: 0.5
+}
+
+
+/* Tiktok icon */
+footer .pwr-social-icon:last-child {
+  content: url("{{ get_asset_url('/Mekano 2021 - POWER theme/images/assets/tiktok_colored.svg') }}");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Zorgt ervoor dat het logo niet verdwijnt op mobiele apparaten */
+.pwr-header-logo__img {
+  display: block !important; 
+}
+
+
+/* Coen CSS aanpassingen 20-03 */
+@media only screen and (max-width: 760px) {
+  .pwr-sub-image-boxes .pwr-rich-text p img { 
+    width: 20px !important;
+    position: relative;
+    top: -4px;
+  }
+}
+
+/* Cookiebanner */
+#hs-modal [type=checkbox]:checked, 
+#hs-modal [type=checkbox]:not(:checked), 
+#hs-modal [type=radio]:checked, 
+#hs-modal [type=radio]:not(:checked) {
+  left: unset !important;
+}
+
+
+
+/* Slider/Swiper */
+.pwr-sec-clients .swiper-wrapper {
+  align-items: center;
+}
+
+/* Over Mekano BE */
+.hs-content-id-59092233765 h1.pwr-hero__title {
+  max-width: 850px;
+}
+
+
+/* ----------------- */
+/* Lanugage switcher */
+/* ----------------- */
+
+/* Set visibility of pseudo */
+.pwr-header-right-bar__language-switcher[lang="nl-nl"] .pwr-header-right-bar__link::before,
+.pwr-header-right-bar__language-switcher[lang="nl-be"] .pwr-header-right-bar__link::before,
+.pwr-header-right-bar__language-switcher .pwr-dropdown [lang="nl-nl"]::before,
+.pwr-header-right-bar__language-switcher .pwr-dropdown [lang="nl-be"]::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-size: cover;  
+  visibility: visible;
+  border-radius: 2px;
+}
+
+.pwr-dropdown__link.pwr-header-right-bar__language-link {
+ width: 40px; 
+}
+
+.pwr-header-right-bar__language-switcher[lang="nl-nl"] .pwr-header-right-bar__link::before,
+.pwr-header-right-bar__language-switcher .pwr-dropdown [lang="nl-nl"]::before {
+  background-image: url("https://fs.hubspotusercontent00.net/hubfs/6535409/flag%20-%20dutch.jpg");
+}
+
+.pwr-header-right-bar__language-switcher[lang="nl-be"] .pwr-header-right-bar__link::before,
+.pwr-header-right-bar__language-switcher .pwr-dropdown [lang="nl-be"]::before {
+  background-image: url("https://fs.hubspotusercontent00.net/hubfs/6535409/flag%20-%20belgium.jpg");
+}
+
+/* Menu bar */
+.pwr-header-right-bar__language-switcher[lang="nl-nl"] .pwr-header-right-bar__link::before,
+.pwr-header-right-bar__language-switcher[lang="nl-be"] .pwr-header-right-bar__link::before {
+  top: 0px;
+}
+
+/* Dropdown */
+.pwr-header-right-bar__language-switcher .pwr-dropdown [lang="nl-nl"]::before,
+.pwr-header-right-bar__language-switcher .pwr-dropdown [lang="nl-be"]::before {
+  left: 10px;
+}
+
+.pwr-header-right-bar__language-switcher .pwr-dropdown {
+  padding: 10px;
+  left: calc(50% + 20px);
+}
+
+
+
+/* TODO: make same as desktop version  */
+/* Mobile language switcher */
+.pwr-burger-bottom-bar__item .pwr-burger-language__trigger {
+  display: none;
+}
+
+.pwr-burger-language__inner {
+  display: inline-block;
+}
+
+.pwr-burger-language__link[lang="nl-nl"],
+.pwr-burger-language__link[lang="nl-be"] {
+  background-size: contain;
+  font-size: 0px;
+  padding: 10px 18px;
+}
+
+.pwr-burger-language__link[lang="nl-nl"] {
+  background-image: url("https://fs.hubspotusercontent00.net/hubfs/6535409/flag%20-%20dutch.jpg");
+}
+
+.pwr-burger-language__link[lang="nl-be"] {
+  background-image: url(https://fs.hubspotusercontent00.net/hubfs/6535409/flag%20-%20belgium.jpg);
+}
+
+
+
+
+
+
+
+
+/* ----------------- */
+/* Opdrachten module */
+/* ----------------- */
+.ind-opdrachten-grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ind-opdrachten-grid .pwr-sub-image-boxes {
+  height: 100%;
+}
+
+.ind-opdrachten-grid .pwr-image-box,
+#opdrachten-belgie .pwr-image-box, 
+#opdrachten-industrial .pwr-image-box, 
+#opdrachten-engineering .pwr-image-box,
+#detail-belgie .pwr-image-box, 
+#detail-industrial .pwr-image-box, 
+#detail-engineering .pwr-image-box,
+#related-belgie .pwr-image-box, 
+#related-industrial .pwr-image-box, 
+#related-engineering .pwr-image-box{
+  width: 100% !important;
+}
+
+.ind-opdrachten-grid .pwr-image-box__img {
+  height: 225px !important;
+  background-size: cover !important;
+}

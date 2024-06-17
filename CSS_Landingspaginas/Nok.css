@@ -1,0 +1,77 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+/* Overlay background image */
+.dnd_area-row-0-background-image {
+    box-shadow: inset 0 0 0 2000px rgba(0,50,109,.3);
+  }
+  
+  /* Titel fonts */
+  h2, h3, h4, h5, h6 {
+    font-family: superior-title, sans-serif;
+  }
+  
+  p {
+    font-family: realist, sans-serif; 
+  }
+  
+  /* Circles voordat ik de module had */
+  #hs_cos_wrapper_widget_1712924208023_ {
+      position: relative;
+      top: 100px;
+      height: auto;
+      width: 50vw;
+      max-width: 250px;
+  }
+  #hs_cos_wrapper_widget_1713439636410_ {
+      position: relative;
+      top: 1100px;
+      height: auto;
+      width: 50vw;
+      max-width: 250px;  
+  }
+  
+  /* Rondingen formulieren */
+  form {
+    border-radius: 30px !important;
+  }
+  /* Hierdoor blijft de titel leesbaar en schiet die er niet onder */
+  .form-title {
+    position: relative;
+    top: 50px; 
+  }
+  
+  /* logo */
+  .header__logo  {
+    width: 125px;
+  }
+  .hs_cos_wrapper_type_logo img {
+    width: 125px !important;
+  }
+  
+  
+  
+  /* Media query */
+  @media only screen and (max-width: 600px) {
+    .header__logo {
+      width: 150px;
+    }
+  }
+  
+  /* Form mooier maken */
+  #hsForm_8d90e74f-ef06-48af-bfaa-0434fcea3b8e_9494 {
+    background-color: red !important;
+  }
+  
+  /* SEE campagne */
+  #hs_cos_wrapper_module_17135295698259 img {
+    border-radius: 30px;
+  }

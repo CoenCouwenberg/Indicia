@@ -1,0 +1,105 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+/* Styling headers */
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+  }
+  
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+  }
+  
+  /* Form */
+  .hs_cos_wrapper .form-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+  }
+  
+  /* header adjust */
+  .header__bottom {
+    padding: 10px !important;
+  }
+  .header__menu-toggle {
+    display: none !important;
+  }
+  
+  /* Form2  */
+  /* #hsForm_1e9a5002-7084-4701-83fe-ce50cf417461_9414 {
+    background-color: blue !important;
+  }
+  .hs_cos_wrapper .hs_cos_wrapper_widget .hs_cos_wrapper_type_form {
+   background-color: rgba(245, 248, 250, 1) !important;
+  }
+  .form:nth-of-type(2) {
+    background-color: red !important;
+  }
+  form {
+    background-color: werkt alleen voor alle globale en niet individueel;
+  } */
+  
+  /* Background color header overwrite */
+  /* .header__bottom {
+    background-color: #313d47; 
+  } */
+  
+  
+  /* Onze merken */
+  #hs_cos_wrapper_widget_1711470690483 .hs-image__grid__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #hs_cos_wrapper_widget_1711470690483 .hs-image__grid__list {
+    align-items: center;
+  }
+  
+  #hs_cos_wrapper_module_17114695282128_title, #hs_cos_wrapper_module_171204628000210 {
+    border-radius: 25px 0px 0px; 
+  }
+  
+  /* Afgeroekte honden meegeven */
+  .dnd_area-column-22-row-1-margin img {
+    border-radius: 25px 0px 0px; 
+  }
+  .service-card {
+    border-radius: 25px 0px 0px; 
+  }
+  .hs-image-widget  {
+    border-radius: 25px 0px 0px; 
+  }
+  
+  /* Formulier rondingen geven */
+  form {
+    border-radius: 25px 0px 0px;
+  }
+  
+  .header__bottom {
+       background-color: #415a66;
+   
+  }

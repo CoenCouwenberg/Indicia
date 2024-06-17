@@ -1,6 +1,9 @@
 # Indicia
 Hier zijn gemaakte modules voor de landingspagina's templates te vinden tijdens mijn Stage bij Indicia. De modules bevatten een module.HTML bestand, hierin staat voornamelijk de html + hubL code, ook bevatten ze een CSS, JavaScript en JSON bestand. Dit is enkel de codebase en zal niet werken omdat het niet in de HubSpot omgeving is, maar op deze manier kan ik de code wel overzichtelijk aantonen. In mijn document Development modules.docx is de uitgebreide beschrijving te vinden.
 
+# CSS_landingspagina's
+Hierin is de CSS te zien die ik heb geschreven om de landingspagina's te fine tunen, niet alle CSS staat hierin omdat sommige CSS op de module in de drag & drop editor zelf zit, dit is dus voornamelijk de CSS die anders niet mogelijk was.
+
 ## IND - Custom Split Section.module
 Een test module om secties te kunnen splitten.
 
