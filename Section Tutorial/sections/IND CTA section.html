@@ -1,0 +1,70 @@
+<!--
+  templateType: section
+  label: CTA Section
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/cta-section.png
+  description: "A CTA section with rich text and a button."
+-->
+
+<style>
+.cta-section {
+    position: relative;
+    height: 100%;
+}
+
+/* Voor de afbeelding */
+.cta-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* Afbeelding links van de CTA-tekst */
+.cta-text::before {
+    content: '';
+    position: absolute;
+    left: -400px;
+    top: -80px;
+    height: 196%;
+    width: 100%;
+    background-image: url('{{ get_asset_url('/NXTminds Theme - Growth Child/Hoofd_2_links_geknipt.png') }}');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1; /* Zodat de afbeelding achter de tekst blijft */
+}
+
+/* Aparte media query zodat de afbeelding verdwijnt omdat er anders te weinig plek voor is */
+@media (max-width: 1650px) {
+    .cta-text::before {
+        display: none;
+    }
+}
+</style>
+
+{% set anchor_tag = '<a id="{{ context.anchor_id }}" data-hs-anchor="true"></a>' %}
+
+{% dnd_section
+  background_color={{ context.background_color }},
+  class="cta-section"
+%}
+  {% dnd_row %}
+    {% dnd_column width=8 %}
+      {% dnd_module path="@hubspot/rich_text" %}
+        {% module_attribute "html" %}
+          <div class="cta-text">
+            {{ anchor_tag if context.anchor_id }}
+            {{ module.html }}
+          </div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+    {% dnd_column width=4 %}
+      {% dnd_module path="@hubspot/button" %}
+        {% module_attribute "html" %}
+          <div class="button-wrapper">
+            {{ module.html }}
+          </div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_column %}
+  {% end_dnd_row %}
+{% end_dnd_section %}

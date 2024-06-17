@@ -1,0 +1,8 @@
+.circle svg{
+  width: 150px;
+}
+.circle.img-rechts {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%
+}

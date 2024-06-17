@@ -1,0 +1,19 @@
+{% if module.reverse_order %}
+  <div class="custom-split-section">
+    <div class="split-section-content">
+      {% rich_text "content" %}
+    </div>
+    <div class="split-section-image">
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt }}">
+    </div>
+  </div>
+{% else %}
+  <div class="custom-split-section">
+    <div class="split-section-image">
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt }}">
+    </div>
+    <div class="split-section-content">
+      {% rich_text "content" %}
+    </div>
+  </div>
+{% endif %}

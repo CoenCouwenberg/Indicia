@@ -1,0 +1,25 @@
+.custom-button {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.main-button {
+/*   padding: 17px 35px; */
+  background-color: #1C2F56;
+  border: 1px solid #1C2F56;
+  border-radius: 30px;
+  color: white;
+}
+
+.icon-button {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7E9D91;
+}
+.main-button:hover {
+  background-color: transparent;
+  color: #1C2F56;
+}

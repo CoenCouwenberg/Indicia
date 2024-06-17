@@ -1,0 +1,59 @@
+[ {
+  "id" : "e2a51042-930c-7712-068a-8127f98196f1",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Ankertekst",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Ankertekst",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Ankertekst"
+}, {
+  "id" : "cb40c685-99a3-744a-c6b2-ce55dc5f0fd1",
+  "name" : "link_field",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "88c73f9f-9df0-a2bb-7444-895e7efb2990",
+  "name" : "css_classe",
+  "display_width" : null,
+  "label" : "CSS-klasse",
+  "help_text" : "Voer een aangepaste CSS-klasse in om stijl toe te passen op de knop.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "bd61eacc-e58e-9a22-1afc-5d4d47c8d13c",
+  "name" : "button_size",
+  "display_width" : null,
+  "label" : "Button grootte",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "large", "Groot" ], [ "small", "Klein" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "large"
+} ]

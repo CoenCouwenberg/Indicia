@@ -1,0 +1,11 @@
+{
+  "global" : false,
+  "content_types" : [ "BLOG_POST" ],
+  "master_language" : "en",
+  "categories" : [ "blog" ],
+  "icon" : "../../../growth%20child/images/module-icons/blog.svg",
+  "host_template_types" : [ "BLOG_POST" ],
+  "module_id" : 105990376388,
+  "label" : "Related posts",
+  "is_available_for_new_content" : true
+}

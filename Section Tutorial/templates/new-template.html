@@ -1,0 +1,23 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+<!doctype html>
+<html>
+  <head>
+    {% extends "./layouts/base.html" %}
+  </head>
+  <body>
+    {% block body %}
+        {% dnd_area "dnd_area"
+          label="Main section",
+          class="body-container body-container--about"
+        %}
+            {% include_dnd_partial path="../sections/testimonial.html" %}
+
+        {% end_dnd_area %}
+    {% endblock body %}
+
+  </body>
+</html>

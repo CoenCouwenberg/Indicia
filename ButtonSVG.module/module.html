@@ -1,0 +1,18 @@
+{% if module.link_field and module.link_field.url and module.link_field.url.href %}
+    {% set href = module.link_field.url.href %}
+    <a href="{{ href }}"
+       class="custom-button {{ module.css_classe }}"
+       
+       {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.link_field.no_follow %}rel="nofollow"{% endif %}>
+        <div class="main-button" style="padding: {% if module.button_size == 'large' %}17px 35px{% elif module.button_size == 'small' %}10px 20px{% endif %};">
+            {{ module.text_field | safe }}
+        </div>
+        <div class="icon-button" style="height: {% if module.button_size == 'large' %}60px{% elif module.button_size == 'small' %}44px{% endif %};">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.89502 1.44226L15.5876 1.44226V9.13482" stroke="white" stroke-width="1.20096" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.41162 15.6187L15.5881 1.44226" stroke="white" stroke-width="1.20096" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+    </a>
+{% endif %}

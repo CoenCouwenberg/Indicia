@@ -1,0 +1,26 @@
+<style>
+/* Voor de afbeelding */
+.cta-text {
+    position: relative;
+    z-index: 2;
+/*     padding-left: 50px; /* Zorg voor wat ruimte aan de linkerkant zodat de tekst niet over de afbeelding valt */ */
+}
+
+/* Afbeelding links van de CTA tekst */
+.cta-text::before {
+    content: '';
+    position: absolute;
+    left: -400px;
+    top: -80px;
+    height: 196%;
+    width: 100%;
+    background-image: url({{ get_asset_url('/Hoofd_2_links_geknipt.png') }});
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1; /* Zodat de afbeelding achter de tekst blijft */
+}
+</style>
+
+<div class="cta-text">
+  {% rich_text html="{{module.html}}" %}
+</div>

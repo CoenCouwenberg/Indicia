@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "master_language" : "en",
+  "placeholder" : {
+    "show_module_icon" : false,
+    "title" : "There are no posts for the selected blog",
+    "description" : "Select a blog in the sidebar"
+  },
+  "categories" : [ "blog" ],
+  "icon" : "../../../growth%20child/images/module-icons/blog.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 105992960706,
+  "label" : "Recent posts",
+  "is_available_for_new_content" : true
+}

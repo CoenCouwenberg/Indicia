@@ -1,0 +1,53 @@
+<div class="iframe-wrapper {{ module.custom_class }}"
+     style="
+         {% if module.responsive_height %}
+             height: auto;
+         {% else %}
+             height: {{ module.iframe_height }};
+         {% endif %}
+     ">
+    <div class="iframe-container"
+         style="
+             {% if module.responsive_height %}
+                 padding-top: {{ module.aspect_ratio }};
+             {% else %}
+                 padding-top: 0;
+                 height: 100%;
+             {% endif %}
+         ">
+        {{ module.iframe_code }}
+    </div>
+</div>
+
+<style>
+.iframe-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .iframe-wrapper {
+        {% if not module.responsive_height and module.height_mobile %}
+            height: {{ module.height_mobile }} !important;
+        {% endif %}
+    }
+}
+</style>

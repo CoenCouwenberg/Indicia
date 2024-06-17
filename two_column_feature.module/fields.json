@@ -1,0 +1,57 @@
+[ {
+  "id" : "227039a2-4f51-e66d-1579-17839738718f",
+  "name" : "feature_text",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "HubSpot Landingpage template - Coen"
+}, {
+  "id" : "2ff6f859-ea77-b951-54df-698307fea117",
+  "name" : "feature_image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://143286311.fs1.hubspotusercontent-eu1.net/hubfs/143286311/thumbnail_ontwikkeling%20tot%20docent.jpg",
+    "alt" : "thumbnail_ontwikkeling tot docent",
+    "loading" : "lazy",
+    "width" : 626,
+    "height" : 417,
+    "max_width" : 626,
+    "max_height" : 417
+  }
+}, {
+  "id" : "d622e864-8fec-0245-e446-6dc30fdca12b",
+  "name" : "choice_field",
+  "display_width" : null,
+  "label" : "Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "img-right", "Image Right" ], [ "img-left", "Image Left" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "img-right"
+}, {
+  "id" : "645dc0ad-7776-87c8-a1c5-91cd71610592",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFD966",
+    "opacity" : 50
+  }
+} ]

@@ -1,0 +1,31 @@
+{# IND SEC CTA #}
+
+<div class="row-fluid {{ module.advanced.custom_css_class }}">
+  <div class="{% if module.show_button_ %}span9{% else %}span12{% endif %} widget-span widget-type-cell dnd-column">
+    <h2>{{ module.title }}</h2>
+    <p>
+      {{ module.description }}
+    </p>
+    
+    
+  </div>
+  {% if module.show_button_ %}
+    <div class="span3 widget-span widget-type-cell dnd-column">
+      {% inline_text field="button.button_text" value="{{ module.button.button_text }}" %}
+      {% set href = module.button.button_link.url.href %}
+        {% if module.button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href|escape_url }}"
+         {% if module.button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.button.button_link.rel %}rel="{{ module.button.button_link.rel|escape_attr }}"{% endif %}
+         >
+        Link text
+      </a>
+    </div>
+  {% endif %}
+</div>
+
+
+
+

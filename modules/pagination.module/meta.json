@@ -1,0 +1,11 @@
+{
+  "global" : false,
+  "content_types" : [ "BLOG_LISTING" ],
+  "master_language" : "en",
+  "categories" : [ "blog" ],
+  "icon" : "../../../growth%20child/images/module-icons/ellipses.svg",
+  "host_template_types" : [ "BLOG_LISTING" ],
+  "module_id" : 105985741518,
+  "label" : "Pagination",
+  "is_available_for_new_content" : true
+}
