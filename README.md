@@ -4,10 +4,10 @@ Hier zijn gemaakte modules voor de landingspagina's templates te vinden tijdens 
 # CSS_landingspagina's
 Hierin is de CSS te zien die ik heb geschreven om de landingspagina's te fine tunen, niet alle CSS staat hierin omdat sommige CSS op de module in de drag & drop editor zelf zit, dit is dus voornamelijk de CSS die anders niet mogelijk was.
 
-## IND - Custom Split Section.module
+## IND Custom Split Section.module
 Een test module om secties te kunnen splitten.
 
-## IND - iframe.module
+## IND iframe.module
 Een module om eigen HTML code te kunnen implementeren in HubSpot, normaal gesproken wordt dit namelijk geëscaped. (zie development modules.docx > Module: iframe)
 .
 ## IND CTA module.module
