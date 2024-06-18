@@ -1,0 +1,50 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/* Dit is een overwride bestand van      */
+/* Enssieg om de brand identity van      */
+/* Flakestrap mee te kunnen geven        */
+/* Dit bestand wordt enkel op deze       */
+/* pagina meegegeven                     */
+/*****************************************/
+
+/* Kleurtjes aangepast op de onderstaande elementen */
+form {
+    background-color: #6d7c60;
+  }
+  #hs_cos_wrapper_module_17114695282128_title {
+    background-color: #6d7c60;
+  }
+  .header__bottom {
+    background-color: #6d7c60;   
+  }
+  .header__wrapper .header__wrapper--bottom {
+    background-color: #6d7c60;
+  }
+  footer { 
+    background-color: #6d7c60;
+  }
+  
+  .footer-row-0-background-color {
+    background-color: #6d7c60 !important;
+  }
+  
+  /* Logo wijzigen */
+  .header__logo-image {
+      content: url('https://144224950.fs1.hubspotusercontent-eu1.net/hubfs/144224950/Logo%20Flakestrap_wit.svg'); /* URL van de nieuwe afbeelding */
+      background-size: cover; /* Optie om de afbeelding te schalen om de hele div te bedekken */
+      background-repeat: no-repeat; /* Voorkomt dat de achtergrondafbeelding wordt herhaald */
+      background-position: center; 
+  }
+  footer .hs-image-widget {
+      content: url('https://144224950.fs1.hubspotusercontent-eu1.net/hubfs/144224950/Logo%20Flakestrap_wit.svg'); /* URL van de nieuwe afbeelding */
+      background-size: cover; /* Optie om de afbeelding te schalen om de hele div te bedekken */
+      background-repeat: no-repeat; /* Voorkomt dat de achtergrondafbeelding wordt herhaald */
+      background-position: center; 
+  }
